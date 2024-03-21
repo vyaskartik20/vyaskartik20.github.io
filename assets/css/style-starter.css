@@ -11364,6 +11364,8 @@ span.sicon {
   -moz-transition: .5s all;
   -ms-transition: .5s all; }
 
+
+
 .service_grid_btm_left2 p {
   color: var(--para);
   font-size: 17px;
@@ -11630,3 +11632,12 @@ span.sicon {
     height: 150px; } }
 
 /*# sourceMappingURL=style-starter.css.map */
+
+
+.imgg {
+  max-width: 480px;
+	width: 100% !important;
+	height: auto;
+        display: block;
+        margin:20px auto;
+}
