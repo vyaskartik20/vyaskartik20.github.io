@@ -2,8 +2,35 @@
 Author: W3layouts
 Author URL: http://w3layouts.com
 -->
+
+<style>
+  .pulse-button {
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
+    }
+    
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+    }
+    
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+    }
+  }
+</style>
+
 <!doctype html>
 <html lang="en">
+
+
 
 <head>
   <!-- Required meta tags -->
@@ -60,13 +87,12 @@ Author URL: http://w3layouts.com
 <section class="w3l-main-banner">
   <div class="banner-view">
     <div class="banner-info container">
-      <h3 class="banner-text"><small> I am</small>
+      <h3 class="banner-text"><small>I am</small>
         Kartik Vyas
       </h3>
-      <p class="mt-3 mb-5"> I am a CSE undergrad from IIT Jodhpur. Currently, I am working as a Software Developer at Morgan Stanley. I like to learn new technologies and intend to come up with 
-        solutions to problems around me.  </p><br>
-      <!-- <a href="portfolio.html" class="btn btn-light btn-style mr-3">My Work</a>
-      <a href="#about.html" class="btn btn-outline-light btn-style">Hire Me</a> -->
+      <p class="mt-3 mb-5">I am working as a Software Developer at Blinkit. I am a CSE undergrad from IIT Jodhpur. I like to learn new technologies and intend to come up with solutions to problems around me.</p><br>
+      <a href="mywork.html" style="margin:2%" class="btn-style btn-primary btn mt-lg-5 mt-4">View my Projects</a>
+      <a href="assets/pdfs/resume.pdf" target="_blank" style="margin:2%; background-color: #28a745; border-color: #28a745;" class="btn-style btn-primary btn mt-lg-5 mt-4 pulse-button">Download Resume</a>
     </div>
   </div>
 
