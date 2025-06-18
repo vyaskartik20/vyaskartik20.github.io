@@ -25,6 +25,22 @@ Author URL: http://w3layouts.com
       box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
     }
   }
+
+  /* Additional styling for better button alignment */
+  .banner-info .d-flex {
+    margin-bottom: 2rem; /* Space below buttons */
+  }
+  
+  .banner-info .btn-style {
+    min-width: 120px;
+    text-align: center;
+  }
+  
+  /* Add spacing between buttons */
+  .banner-info .mr-3 {
+    margin-right: 1rem !important;
+  }
+	
 </style>
 
 <!doctype html>
@@ -87,13 +103,17 @@ Author URL: http://w3layouts.com
 <section class="w3l-main-banner">
   <div class="banner-view">
     <div class="banner-info container">
-      <h3 class="banner-text"><small>I am</small>
-        Kartik Vyas
-      </h3>
-      <p class="mt-3 mb-5"> Backend-focused Software Engineer with three years of experience building scalable, reliable systems. Graduated from IIT Jodhpur, started out at Morgan Stanley, now building at Blinkit. Always exploring new tech, driven to solve real-world problems through code. </p><br>
-      <a href="mywork.html" style="margin:1%" class="btn-style btn-primary btn mt-lg-5 mt-4">My Work</a>
-      <a href="assets/pdfs/resume.pdf" target="_blank" class="btn-style btn-primary btn mt-lg-5 mt-4">My Résumé</a>
-    </div>
+	  <h3 class="banner-text"><small>I am</small>
+	    Kartik Vyas
+	  </h3>
+	  <p class="mt-3 mb-4">Backend-focused Software Engineer with three years of experience building scalable, reliable systems. Graduated from IIT Jodhpur, started out at Morgan Stanley, now building at Blinkit. Always exploring new tech, driven to solve real-world problems through code.</p>
+	  
+	  <!-- Buttons container with flexbox for horizontal alignment -->
+	  <div class="d-flex justify-content-start mt-4">
+	    <a href="mywork.html" class="btn-style btn-primary btn mr-3">My Work</a>
+	    <a href="assets/pdfs/resume.pdf" target="_blank" class="btn-style btn-primary btn">My Résumé</a>
+	  </div>
+	</div>
   </div>
 
   <div id='stars'></div>
