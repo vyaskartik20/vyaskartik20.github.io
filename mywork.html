@@ -5,6 +5,28 @@ Author URL: http://w3layouts.com
 <!doctype html>
 <html lang="en">
 
+<style>
+  /* Styling for the vertical images container */
+  .vertical-images-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Add spacing between images */
+  .mb-3 {
+    margin-bottom: 15px;
+  }
+  
+  /* Make images responsive and maintain aspect ratio */
+  .vertical-images-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds subtle shadow */
+  }
+</style>
+  
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -74,42 +96,51 @@ Author URL: http://w3layouts.com
       </div>
 
      <div class="news-grid">
-        <div class="col-xl-8 news-text two">
-         <h3><a href="#" data-toggle="modal" data-target="#myModal1">BLINKIT</a></h3>
-          Cost Management System | Gurugram, HR | August 2024 – Present
-          <ul>
-            <li>Architected and developed cost calculation and attribution system for fleet operations managing INR 250+ crores in logistics costs (4% of company revenue), leading to annual savings of INR 3+ crores</li>
-            <li>Designed Kafka driven modular and idempotent system architecture using several design patterns</li>
-            <li>Onboarded Hyperpure as new tenant and implemented multi-tenure cost optimization strategies</li>
-            <li>Created Cost Simulator to allow ground team experimentation and manually approve trips</li>
-            <li>Integrated Celery driven CRONs for tenure based cost settlements and used Redis to avoid race conditions</li>
-          </ul>
-          Fleet Management
-          <ul>
-            <li>Developed Distance Regulation system to standardize 15K+ node-to-node mappings across the country</li>
-            <li>Built Tolls Management platform using Google Routes API managing 60K+ toll mappings</li>
-            <li>Implemented Vehicle Management module enabling easy onboardings of 5K+ vehicles with tenure-based truck type and vendor selection workflows using Python and Django</li>
-            <li>Enriched Vendor Rate Card system using Celery supporting multiple billing tenures and vehicle types with bulk upload, removal and approval functionalities, reducing ops team manual effort by 90%</li>
-          </ul>
-          Driver Onboarding
-          <ul>
-            <li>Engineered identity verification pipeline using Django and Kafka integrated with third-party services and Gemini AI for automated and manual quality checks</li>
-            <li>Implemented step-based workflow backend and automated re-evaluation triggers upon suspicious activities</li>
-            <li>Successfully onboarded 15,000+ drivers while maintaining security standards (200+ blacklisted)</li>
-            <li>Integrated AWS Cognito and Lambda for serverless authentication and OTP functionality</li>
-          </ul>
-          Technologies Used
-          <ul>
-            <li>Python, Django, Kafka, Redis, Celery, PostgreSQL, React JS, AWS, GraphQL</li>
-          </ul>
-        </div>
-        <div class="col-xl-4 news-img3">
+      <div class="col-xl-8 news-text two">
+        <h3><a href="#" data-toggle="modal" data-target="#myModal1">BLINKIT</a></h3>
+        Cost Management System | Gurugram, HR | August 2024 – Present
+        <ul>
+          <li>Architected and developed cost calculation and attribution system for fleet operations managing INR 250+ crores in logistics costs (4% of company revenue), leading to annual savings of INR 3+ crores</li>
+          <li>Designed Kafka driven modular and idempotent system architecture using several design patterns</li>
+          <li>Onboarded Hyperpure as new tenant and implemented multi-tenure cost optimization strategies</li>
+          <li>Created Cost Simulator to allow ground team experimentation and manually approve trips</li>
+          <li>Integrated Celery driven CRONs for tenure based cost settlements and used Redis to avoid race conditions</li>
+        </ul>
+        Fleet Management
+        <ul>
+          <li>Developed Distance Regulation system to standardize 15K+ node-to-node mappings across the country</li>
+          <li>Built Tolls Management platform using Google Routes API managing 60K+ toll mappings</li>
+          <li>Implemented Vehicle Management module enabling easy onboardings of 5K+ vehicles with tenure-based truck type and vendor selection workflows using Python and Django</li>
+          <li>Enriched Vendor Rate Card system using Celery supporting multiple billing tenures and vehicle types with bulk upload, removal and approval functionalities, reducing ops team manual effort by 90%</li>
+        </ul>
+        Driver Onboarding
+        <ul>
+          <li>Engineered identity verification pipeline using Django and Kafka integrated with third-party services and Gemini AI for automated and manual quality checks</li>
+          <li>Implemented step-based workflow backend and automated re-evaluation triggers upon suspicious activities</li>
+          <li>Successfully onboarded 15,000+ drivers while maintaining security standards (200+ blacklisted)</li>
+          <li>Integrated AWS Cognito and Lambda for serverless authentication and OTP functionality</li>
+        </ul>
+        Technologies Used
+        <ul>
+          <li>Python, Django, Kafka, Redis, Celery, PostgreSQL, React JS, AWS, GraphQL</li>
+        </ul>
+      </div>
+      <div class="col-xl-4 news-img3">
+        <!-- Three vertical images with spacing -->
+        <div class="vertical-images-container">
           <a href="#" data-toggle="modal" data-target="#myModal1"> 
-            <img src="assets/images/blinkit.png" alt="Blinkit Logo" class="img-responsive"> 
+            <img src="assets/images/blinkit1.jpg" alt="Blinkit" class="img-responsive mb-3"> 
+          </a>
+          <a href="#" data-toggle="modal" data-target="#myModal1"> 
+            <img src="assets/images/blinkit2.jpg" alt="Blinkit" class="img-responsive mb-3"> 
+          </a>
+          <a href="#" data-toggle="modal" data-target="#myModal1"> 
+            <img src="assets/images/blinkit3.jpg" alt="Blinkit" class="img-responsive"> 
           </a>
         </div>
-        <div class="clearfix"></div>
       </div>
+      <div class="clearfix"></div>
+    </div>
       
       <!-- 1 -->
      <div class="news-grid">
